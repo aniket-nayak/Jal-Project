@@ -1,13 +1,13 @@
-var express = require('express'),
+var express = require("express"),
     router = express.Router(),
-    passport = require('passport'),
-    User = require('../models/user'),
-    middleware = require('../middleware/index'),
-    async = require('async'),
-        nodemailer = require('nodemailer'),
+    passport = require("passport"),
+    User = require("../models/user"),
+    middleware = require("../middleware/index"),
+    async = require("async"),
+        nodemailer = require("nodemailer"),
         crypto = require("crypto");
 
-require('dotenv').config();
+require("dotenv").config();
 
 //Register form
 router.get("/register", (req, res) => {
@@ -64,6 +64,9 @@ router.post("/forgot", function (req, res, next) {
         [
             function (done) {
                 crypto.randomBytes(20, function (err, buf) {
+                    if (err) {
+                        console.log(err);
+                    }
                     var token = buf.toString("hex");
                     done(err, token);
                 });
@@ -97,7 +100,7 @@ router.post("/forgot", function (req, res, next) {
                 });
                 var mailOptions = {
                     to: user.email,
-                    from: "aniketproject99@gmail.com",
+                    from: "no-replyjalproject@gmail.com",
                     subject: "The JAL Password Reset",
                     text: "You are receiving this email because you (or someone else) have requested the reset of the password for your account.\n\n" +
                         "Please click on the following link, or paste this into your browser to complete the process:\n\n" +
@@ -181,7 +184,7 @@ router.post("/reset/:token", function (req, res) {
                     service: "Gmail",
                     auth: {
                         user: "aniketproject99@gmail.com",
-                        pass: process.env.GMAILPW
+                        pass: "seetulshaan"
                     }
                 });
                 var mailOptions = {
