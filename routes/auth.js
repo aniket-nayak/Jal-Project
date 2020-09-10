@@ -92,7 +92,7 @@ router.post("/forgot", function (req, res, next) {
                     service: "Gmail",
                     auth: {
                         user: "aniketproject99@gmail.com",
-                        pass: process.env.GMAILPASSWORD
+                        pass: "seetulshaan"
                     }
                 });
                 var mailOptions = {
