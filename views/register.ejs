@@ -1,0 +1,52 @@
+<%- include("partials/form/header") %>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 d-none d-md-block image-container">
+
+        </div>
+        <div class="col-lg-6 col-md-6 form-container">
+            <div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box text-center">
+                <div class="heading mb-4">
+                    <h3><i class="fas fa-user-plus"></i> Create A New Account!</h3>
+                </div>
+
+                <form action="/register" method="POST">
+                    <div class="form-input">
+                        <span><i class="far fa-user-circle"></i></span>
+                        <input type="text" name="fullName" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-input">
+                        <span> <i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-input">
+                        <span> <i class="fas fa-user-alt"></i></span>
+                        <input type="text" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="form-input">
+                        <span> <i class="fa fa-lock" aria-hidden="true"></i></span>
+                        <input type="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-input">
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <input type="number" name="mobile" placeholder="Mobile Number" required>
+                    </div>
+                    <div class="form-input">
+                        <span> <i class="fas fa-id-card"></i></span>
+                        <textarea name="address" cols="56" rows="6" placeholder="Your Complete Address"
+                            required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn" type="submit">Register</button>
+                    </div>
+                    <div style="color: #fff;">Already have an account ? <a href="login.html">Login here</a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,131 @@
+.body {
+    background: #f5d9d5;
+    font-family: "Nunito", sans-serif;
+}
+
+#mainNavbar {
+    font-size: 1.3rem;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #ea1c2c;
+}
+
+#mainNavbar .navbar-brand {
+    color: #ea1c2c;
+}
+
+.navbar .scrolled {
+    background-color: rgb(222, 192, 222);
+}
+
+
+.container-fluid {
+    margin-top: 0px;
+}
+
+.image-container {
+    background: url("https://images.pexels.com/photos/1100946/pexels-photo-1100946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.form-container {
+    background: #666666;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form-box h3 {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-weight: bolder;
+    color: white;
+}
+
+.form-box .form-input {
+    position: relative;
+}
+
+.form-box .form-input input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    outline: none;
+    background: white;
+    padding-left: 45px;
+}
+
+.form-box .form-input p {
+    float: left;
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+    font-weight: bolder;
+    color: white;
+}
+
+.form-box .form-input #image-id {
+    margin-bottom: 14px;
+}
+
+.form-box .form-input textarea {
+    width: 100%;
+    height: 100px;
+    border: none;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    outline: none;
+    background: white;
+    padding-left: 45px;
+}
+
+#newTextarea {
+    height: 200px;
+}
+
+.form-box .form-input span {
+    position: absolute;
+    top: 8px;
+    padding-left: 20px;
+    color: #777;
+}
+
+.form-box .form-input input::placeholder {
+    padding-left: 0px;
+}
+
+.form-box .form-input input:focus,
+.form-box .form-input input:valid {
+    border-bottom: 2px solid #48403d;
+}
+
+.form-box button[type="submit"] {
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border-right: 5px;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    transform: 0.5s;
+}
+
+.form-box button[type="submit"]:hover {
+    box-shadow: 0px 9px 10px -2px rgba(0, 0, 0, 0.55);
+}
