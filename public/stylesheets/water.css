@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+    height: 25px;
+    margin-top: 0;
+    padding: 0;
+}
+
+
+.about-section {
+    background-image: url("https://images.pexels.com/photos/6256/water-kitchen-black-design.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 60%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.inner-container {
+    width: 55%;
+    float: right;
+    background-color: #FAEAEA;
+    padding: 100px;
+}
+
+.inner-container h1 {
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.text {
+    font-size: 16px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.btn {
+    margin-bottom: 15px;
+    background: #5f4b8bff;
+    color: white;
+    text-decoration: none;
+    padding: 5px 12px 8px;
+    border-radius: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    border: none;
+}
+
+.btn:hover {
+    background: #f95700ff;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width:1200px) {
+    .inner-container {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .about-section {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+
+    .inner-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .about-section {
+        padding: 0;
+    }
+
+    .inner-container {
+        padding: 60px;
+    }
+}

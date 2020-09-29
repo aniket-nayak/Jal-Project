@@ -3,6 +3,7 @@ var express = require("express"),
     mongoose = require("mongoose"),
     passport = require("passport"),
     bodyparser = require("body-parser"),
+    paypal = require("paypal-rest-sdk"),
     flash = require("connect-flash"),
     User = require("./models/user"),
     LocalStrategy = require("passport-local"),
@@ -36,6 +37,13 @@ app.use(
         extended: true
     })
 );
+
+paypal.configure({
+    'mode': 'sandbox', //sandbox or live
+    'client_id': 'AVmZ-OWw7wQFu-n34R6qQKaiVzzh4qV9oU-g-FKkUlrzjZVfUwq29cllRXnNWSTK0KM1oIesd3xt16BG',
+    'client_secret': 'ENa8IYLDuu703iZ7mu-Z-XI8dZ3KdjpGGNI2k-iUpcgfMRcOgH0j54y1o-C5CAN6bcq_aVKVrE9Eb6lP'
+});
+
 app.use(flash());
 
 app.set("view engine", "ejs");

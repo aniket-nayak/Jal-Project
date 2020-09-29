@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Google Font-->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome-->
     <script src="https://kit.fontawesome.com/d25a039e29.js" crossorigin="anonymous"></script>
     <!-- CSS only -->
@@ -18,7 +19,7 @@
 
 <body class="body">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/"><i class="fas fa-blog"></i>Web App</a>
+        <a class="navbar-brand" href="/"><img src="/photo/water.png" alt="" srcset="">JAL</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#blogAppContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,17 +31,18 @@
                     <a class="nav-link" href="/"> <i class="fa fa-home" aria-hidden="true"></i> Home <span
                             class="sr-only"></span></a>
                 </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/water"> <i class="fa fa-faucet" aria-hidden="true"></i> Water <span
+                            class="sr-only"></span></a>
+                </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <ul class="navbar-nav my-2 my-lg-0">
                     <% if(!currentUser){ %>
                     <li>
                         <a class="nav-link" href="/login">
-                            <i class="fa fa-sign-in" aria-hidden="true"></i> Login
+                            <i class="fa fa-sign-in" aria-hidden="true"></i> Authentication
                         </a>
-                    </li>
-                    <li class="nav-right">
-                        <a class="nav-link" href="/register"><i class="fas fa-user-plus"></i> SignUp</a>
                     </li>
                     <% }else{ %>
                     <li class="nav-right">

@@ -11,14 +11,13 @@ require("dotenv").config();
 
 //Register form
 router.get("/register", (req, res) => {
-    res.render("register");
+    res.render("login");
 });
 router.post("/register", (req, res) => {
     var newUser = new User({
         name: req.body.fullName,
         username: req.body.username,
         email: req.body.email,
-        phone: req.body.mobile,
         address: req.body.address
     });
     User.register(newUser, req.body.password, (err, user) => {

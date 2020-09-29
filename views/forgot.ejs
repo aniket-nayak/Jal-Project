@@ -1,26 +1,29 @@
 <%- include("partials/form/header") %>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-6 col-md-6 d-none d-md-block image-container">
 
-        </div>
-        <div class="col-lg-6 col-md-6 form-container">
-            <div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box text-center">
-                <div class="heading mb-4">
-                    <h3>Forgot Password</h3>
+<div class="container">
+    <div class="forms-container">
+        <div class="signin-signup">
+            <form action="/forgot" method="POST" class="sign-in-form">
+                <h2 class="title">Forgot Password</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="email" name="email" placeholder="Enter Your Email" autofocus required>
                 </div>
-                <form action="/forgot" method="POST">
-                    <div class="form-input">
-                        <span style="position: absolute;"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                        <input type="email" name="email" placeholder="Enter Your Email" autofocus required>
-                    </div>
-                    <div class="mb-3">
-                        <button class="btn" type="submit">Reset Password</button>
-                    </div>
-                    <div><a href="/login">Go Back..</a>
-                    </div>
-                </form>
+                <input type="submit" value="Reset" class="btn solid" />
+                <a href="/login">Go Back</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="panels-container">
+        <div class="panel left-panel">
+            <div class="content">
+                <h3>Forgot Password ??</h3>
+                <p>
+                    Don't worry enter your email and we will help you!!!
+                </p>
             </div>
+            <img src="/photo/forgot.svg" class="image" alt="" />
         </div>
     </div>
 </div>
