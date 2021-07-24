@@ -3,21 +3,6 @@
     font-family: 'Roboto Slab', serif;
 }
 
-#mainNavbar {
-    font-size: 1.3rem;
-}
-
-#mainNavbar .nav-link {
-    color: white;
-}
-
-#mainNavbar .nav-link:hover {
-    color: #ea1c2c;
-}
-
-#mainNavbar .navbar-brand {
-    color: #ea1c2c;
-}
 
 .navbar-brand img {
     margin-right: 10px;
@@ -32,6 +17,7 @@
 }
 
 .blurb h1 {
+    margin-top: 30px;
     color: #ea1c2c;
     font-size: 2.5rem;
     font-weight: 700;
@@ -260,25 +246,25 @@
 
 @media (min-width:400px) and (max-width:1200px) {
     .card__side {
-        height: 18rem;
+        height: 20rem;
     }
 }
 
 @media (min-width:600px) and (max-width:900px) {
     .card__side {
-        height: 18rem;
+        height: 20rem;
     }
 }
 
 @media (min-width:400px) and (max-width:600px) {
     .card__side {
-        height: 18rem;
+        height: 20rem;
     }
 }
 
 @media (min-width:200px) and (max-width:400px) {
     .card__side {
-        height: 18rem;
+        height: 20rem;
     }
 }
 
